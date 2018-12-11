@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RBTour Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header page-header__sticky">
+      <div class="page-header--left-part">
+        <span class="page-header--logo">RBTour</span>
+        <div class="page-header--langs">
+          <a href="index.html" class="lang">Russian</a>
+          <a class="lang lang__active">English</a>
+        </div>
+      </div>
+      <div class="page-header--right-part english--part">
+        <button class="button button__small button__bordered call-visa-modal" style="display: none;">
+            Визовая поддержка
+        </button>
+        <div class="page-header--contacts">
+          <p>
+            <a href="tel:+78123143412">+7 (812) 272-66-35</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrapper english-wrapper">
+      <main class="page-main main-english">
+        <h1 class="visa-block--header english--header">
+          Visa support
+        </h1>
+        <div class="visa-block--info english--info">
+          <p>
+            For a trip to Russia, almost all foreign citizens require a visa.
+          </p>
+          <div>
+            A Russian entry visa is issued by the Embassy or Consulate of the
+            Russian Federation in your country of residence in the visa support
+            service. Visa support includes the granting of an entry permit for a
+            foreign citizen and the registration of a tourist voucher in the
+            Ministry of Foreign Affairs of Russia. To obtain a visa you need:
+            <ol>
+              <li>Get visa support through this form.</li>
+              <li>Print your documents for a visa and submit them to the nearest Russian consulate.</li>
+            </ol>
+          </div>
+        </div>
+        <section class="visa--questions">
+          <h2 class="visa--questions-title">
+              FAQ:
+          </h2>
+          <div class="question--wrapper">
+            <div class="visa--question" id="quest1">
+              How long does support take?
+              <button class="button-arrow button-arrow__down question--button" id="quest1--but"></button>
+            </div>
+            <div class="visa--answer" id="quest1--ans">
+              Support for a tourist visa is made up to one week. Terms of business visa are negotiated individually.
+            </div>
+          </div>
+          <div class="question--wrapper">
+            <div class="visa--question" id="quest2">
+              Visa and visa support are the same?
+              <button class="button-arrow button-arrow__down question--button" id="quest2--but"></button>
+            </div>
+            <div class="visa--answer" id="quest2--ans">
+              No, visa support is an invitation to the country. This document is necessary for obtaining a visa, but it is not a visa.
+            </div>
+          </div>
+          <div class="question--wrapper">
+            <div class="visa--question" id="quest3">
+              Do I need an original?
+              <button class="button-arrow button-arrow__down question--button" id="quest3--but"></button>
+            </div>
+            <div class="visa--answer" id="quest3--ans">
+              The original is needed in some cases for business visas, for a tourist copy is sufficient.
+            </div>
+          </div>
+        </section>
+
+        <section class="spetial english--special">
+          <h1 class="spetial--header">
+            You have questions? <br />
+            Write to us, and we will tell you about everything.
+          </h1>
+          <form class="superior" id="superior" action="#">
+            <p class="superior--group">
+              <label class="visually-hidden" for="superior-name"> Name </label>
+              <input class="superior--text" type="text" id="superior-name" name="superior-name" placeholder="Name" required/>
+            </p>
+
+            <p class="superior--group">
+              <label class="visually-hidden" for="superior-contacts"> Phone or e-mail </label>
+              <input class="superior--text" type="text" id="superior-contacts" name="superior-contacts" placeholder="Phone or e-mail" required/>
+            </p>
+
+            <p class="superior--group">
+              <label class="visually-hidden" for="superior-question"> Your question </label>
+              <input class="superior--text" type="text" id="superior-question" name="superior-question" placeholder="Your question" required/>
+            </p>
+
+            <button class="button button__big button__colored superior--submit" type="submit"> Send </button>
+
+            <p class="superior--confirm">
+              <a href="#">Privacy Policy</a>
+            </p>
+          </form>
+        </section>
+      </main>
+      <aside class="page-aside">
+        <section class="visa-select">
+          <h2 class="visa--type-header">For which visa do you need an invitation?</h2>
+            <a class="button button__big button__colored choose-visa-type tourist-visa" id="eng-visa-tour">Tourist visa</a>
+            <a class="button button__big button__colored choose-visa-type business-visa" id="eng-visa-bus">Business visa</a>
+        </section>
+        <div class="info--wrapper">
+          <section class="partners">
+            <h2 class="partners--title">We worked with: </h2>
+            <ul class="partners--list">
+              <li>
+                <a href="#">University of Oxford</a>
+              </li>
+              <li>
+                <a href="#">Газпром</a>
+              </li>
+              <li>
+                <a href="#">Университет ИТМО</a>
+              </li>
+              <li>
+                <a href="#">Мегафон</a>
+              </li>
+              <li>
+                <a href="#">Coffeeshop Company</a>
+              </li>
+            </ul>
+          </section>
+          <section class="address">
+            <div class="address--copyright">
+              (c) RBTour Ltd 2018
+            </div>
+            <a class="address--text" href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%8F%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+23,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191014/@59.939808,30.3543136,17.74z/data=!4m5!3m4!1s0x469631a1dbb1e65f:0xc4bcaeb090cb1f1!8m2!3d59.939832!4d30.355595" target="_blank">
+              Saint-Petersburg, Mayakovskaya st., 23/6, apt3
+            </a>
+          </section>
+        </div>
+      </aside>
+    </div>
+    <div class="modal modal-visa">
+      <section class="modal--body visa--body">
+        <div class="visa--form">
+          <form class="support--form" id="visa-support-form" action="">
+            <ul class="progressbar" id="progressbar">
+              <li class="active"><span class="visually-hidden">Travel data</span></li>
+              <li><span class="visually-hidden">Guest Details</span></li>
+              <li class="only-busines" id="only-business-li"><span class="visually-hidden">Guest Details</span></li>
+              <li><span class="visually-hidden">List of Cities</span></li>
+              <li><span class="visually-hidden">Check the data</span></li>
+              <li><span class="visually-hidden">Contact details</span></li>
+            </ul>
+            <div class="support--fs" id="step1">
+              <div class="support--fields">
+                <h2 class="support--fs-title">Travel data</h2>
+                <div class=body>
+                  <input class="support--text" id="cityzen" placeholder="Citizenchip" list="en" value="">
+                  <datalist id=en></datalist>
+                </div>
+                <div class="support--radio-group">
+                  <div>
+				  <input type="radio" id="tourist--visa" name="visa-type--radio" value="tourist--visa" >
+                  <label for="tourist--visa">Tourist trip</label>
+				  </div>
+
+                  <div>
+				  <input type="radio" id="business--visa"  name="visa-type--radio" value="business--visa">
+                  <label for="business--visa">Business trip </label>
+				  </div>
+                </div>
+                <div class="support--type-group">
+                  <select class="visa--type support--select" name="visa--type" id="visa--type">
+                   <option class="option option-both" value="Однократная (до 30 дней)" selected>One enterie (less than 30 days)</option>
+                   <option class="option option-both" value="Двухкратная (до 30 дней)">Two enteries (less than 30 days)</option>
+                   <option class="option option-business" value="Многократная">Multiple entry</option>
+                   </select>
+                </div>
+
+               <div class="support--dates">
+                 <div class="support--group">
+                   <span class="label">Data of entry</span>
+                   <input class="support--data" type="date" name="come-in--date" id="come-in--date" value="">
+                 </div>
+                 <div class="support--group">
+                   <span class="label">Data of departure</span>
+                   <input class="support--data" type="date" name="come-out--date" id="come-out--date" value="">
+                 </div>
+               </div>
+               <div class="support--gests-group">
+                 <select class="visa--gests  support--select" name="visa--gests" id="visa--gests">
+                  <option class="option" value="1" selected>1 guest</option>
+                  <option class="option" value="2">2 guests</option>
+                  <option class="option" value="3">3 guests</option>
+                  <option class="option" value="4">4 guests</option>
+                  </select>
+                </div>
+                <a class="button button-block button__big button__colored next" name="next" id="13456">Guest Details</a>
+              </div>
+              <div class="support--hints">
+                  <p class='hint'>
+                    For citizens of some countries, the conditions for obtaining visa support may vary. In this case, we will contact you after filling out the form to clarify the details.
+                  </p>
+              </div>
+            </div>
+            <div class="support--fs" id="step2">
+              <div class="support--fields">
+                <h2 class="support--fs-title">Guest Details</h2>
+                <div id="guest-1">
+                  <input class="support--text visa--name"  type="text" name="visa--name" placeholder="Given name (as in passport, latin letters)" pattern="[A-Za-z]">
+                  <input class="support--text visa--surname"  type="text" name="visa--surname" placeholder="Surname (as in passport, latin letters)">
+                  <div class="support--row">
+                    <div class="support--group">
+                      <select class="visa--sex support--select" name="visa--sex" id="visa--sex">
+                        <option class="option" value="Male" selected>Male</option>
+                        <option class="option" value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="support--group">
+                      <span class="label">Date of Birth</span>
+                      <input class="visa--date support--date visa--birth" min="1901-01-01" max="" type="date" name="visa--birth">
+                    </div>
+                  </div>
+                  <div class="support--row">
+                    <div class="support--group">
+                      <input class="visa--date support--number visa--passport" type="number" name="visa--passport" placeholder="Passport number">
+                    </div>
+                    <div class="support--group">
+                      <span class="label">The validity of the passport</span>
+                      <input class="visa--date support--date visa--passport-date" type="date" name="visa--passport-date">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="another--guest" id="guest-2">
+                  <input class="support--text visa--name"  type="text" name="visa--name" placeholder="Given name (as in passport, latin letters">
+                  <input class="support--text visa--surname"  type="text" name="visa--surname" placeholder="Surname (as in passport, latin letters)">
+                  <div class="support--row">
+                    <div class="support--group">
+                      <select class="visa--sex support--select" name="visa--sex" id="visa--sex">
+                        <option class="option" value="Male" selected>Male</option>
+                        <option class="option" value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="support--group">
+                      <span class="label">Date of Birth</span>
+                      <input class="visa--date support--date visa--birth" min="1901-01-01" max="" type="date" name="visa--birth">
+                    </div>
+                  </div>
+                  <div class="support--row">
+                    <div class="support--group">
+                      <input class="visa--date support--number visa--passport" type="number" name="visa--passport" placeholder="Passport number">
+                    </div>
+                    <div class="support--group">
+                      <span class="label">The validity of the passport</span>
+                      <input class="visa--date support--date visa--passport-date" type="date" name="visa--passport-date">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="another--guest"  id="guest-3">
+                  <input class="support--text visa--name"  type="text" name="visa--name" placeholder="Given name (as in passport, latin letters">
+                  <input class="support--text visa--surname"  type="text" name="visa--surname" placeholder="Surname (as in passport, latin letters)">
+                  <div class="support--row">
+                    <div class="support--group">
+                      <select class="visa--sex support--select" name="visa--sex" id="visa--sex">
+                        <option class="option" value="Male" selected>Male</option>
+                        <option class="option" value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="support--group">
+                      <span class="label">Date of Birth</span>
+                      <input class="visa--date support--date visa--birth" min="1901-01-01" max="" type="date" name="visa--birth">
+                    </div>
+                  </div>
+                  <div class="support--row">
+                    <div class="support--group">
+                      <input class="visa--date support--number visa--passport" type="number" name="visa--passport" placeholder="Passport number">
+                    </div>
+                    <div class="support--group">
+                      <span class="label">The validity of the passport</span>
+                      <input class="visa--date support--date visa--passport-date" type="date" name="visa--passport-date">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="another--guest" id="guest-4">
+                  <input class="support--text visa--name"  type="text" name="visa--name" placeholder="Given name (as in passport, latin letters">
+                  <input class="support--text visa--surname"  type="text" name="visa--surname" placeholder="Surname (as in passport, latin letters)">
+                  <div class="support--row">
+                    <div class="support--group">
+                      <select class="visa--sex support--select" name="visa--sex" id="visa--sex">
+                        <option class="option" value="Male" selected>Male</option>
+                        <option class="option" value="Female">Female</option>
+                      </select>
+                    </div>
+                    <div class="support--group">
+                      <span class="label">Date of Birth</span>
+                      <input class="visa--date support--date visa--birth" min="1901-01-01" max="" type="date" name="visa--birth">
+                    </div>
+                  </div>
+                  <div class="support--row">
+                    <div class="support--group">
+                      <input class="visa--date support--number visa--passport" type="number" name="visa--passport" placeholder="Passport number">
+                    </div>
+                    <div class="support--group">
+                      <span class="label">The validity of the passport</span>
+                      <input class="visa--date support--date visa--passport-date" type="date" name="visa--passport-date">
+                    </div>
+                  </div>
+                </div>
+
+                <a class="button button-href previous--button" name="previous">Back</a>
+                <a class="button button-block button__big button__colored next" name="next" id="changed">List of Cities</a>
+              </div>
+              <div class="support--hints">
+                <p class='hint'>
+                  Please note that the passport must be valid for at least six months from the date of planned departure from Russia.
+                </p>
+              </div>
+            </div>
+            <div class="support--fs no-hint" id="only-business-div" id="step3">
+              <div class="support--fields">
+                <h2 class="support--fs-title">Personal data</h2>
+                <div id="personal-1">
+                  <input class="support--text visa--birth-place"  type="text" name="visa--birth-place" placeholder="Place of Birth">
+                  <input class="support--text visa--live-place"  type="text" name="visa--live-place" placeholder="Place of residence">
+                  <input class="support--text visa--work"  type="text" name="work" placeholder="Position, place of work (in Russian)">
+                  <input class="support--text visa--work-lng"  type="text" name="work-lng" placeholder="Position, place of work (in the native language)
+">
+                </div>
+
+                <div class="another--guest" id="personal-2">
+                  <input class="support--text visa--birth-place"  type="text" name="visa--birth-place" placeholder="Place of Birth">
+                  <input class="support--text visa--live-place"  type="text" name="visa--live-place" placeholder="Place of residence">
+                  <input class="support--text visa--work"  type="text" name="work" placeholder="Position, place of work (in Russian)">
+                  <input class="support--text visa--work-lng"  type="text" name="work-lng" placeholder="Position, place of work (in the native language)">
+                </div>
+
+                <div class="another--guest" id="personal-3">
+                  <input class="support--text visa--birth-place"  type="text" name="visa--birth-place" placeholder="Place of Birth">
+                  <input class="support--text visa--live-place"  type="text" name="visa--live-place" placeholder="Place of residence">
+                  <input class="support--text visa--work"  type="text" name="work" placeholder="Position, place of work (in Russian)">
+                  <input class="support--text visa--work-lng"  type="text" name="work-lng" placeholder="Position, place of work (in the native language)">
+                </div>
+
+                <div class="another--guest" id="personal-4">
+                  <input class="support--text visa--birth-place"  type="text" name="visa--birth-place" placeholder="Place of Birth">
+                  <input class="support--text visa--live-place"  type="text" name="visa--live-place" placeholder="Place of residence">
+                  <input class="support--text visa--work"  type="text" name="work" placeholder="Position, place of work (in Russian)">
+                  <input class="support--text visa--work-lng"  type="text" name="work-lng" placeholder="Position, place of work (in the native language)">
+                </div>
+
+                <a class="button button-href previous--button" name="previous">Back</a>
+                <a class="button button-block button__big button__colored next" name="next" id="changed">List of Cities</a>
+              </div>
+            </div>
+            <div class="support--fs no-hint" id="step4">
+              <div class="support--fields">
+                <h2 class="support--fs-title">List of Cities</h2>
+                <textarea class="visa--cities" id="visa--cities" name="visa--cities" rows="3" placeholder=" List the cities that are going to visit "></textarea>
+                <div>
+                  <h2 class="support--fs-title">Almost done</h2>
+                  <p class="support--file-hint">
+                    In some cases, we may need a copy of your passport. You can
+                    <label class="file--label ">
+                      <input type="file" name="file">
+                      <span class="label-text">now attach it to the application</span>
+                    </label>
+                    or send it later personally to our specialist.
+                    <input type="text" id="filename" class="filename" disabled>
+                  </p>
+                  </div>
+                  <a class="button button-block button__big button__colored visa--check-button next" name="next">
+                     Check the data <br />
+                    <span class="small-text">(they are still not going anywhere)</span>
+                  </a>
+                  <a class="button button-href previous--button" name="previous">Back</a>
+              </div>
+              <div class="support--hints"></div>
+            </div>
+            <div class="support--fs no-hint" id="step5">
+              <div class="support--check">
+                <h2 class="support--fs-title">Is everything right?</h2>
+                <div class="step-check step1">
+                  <div>
+                    <h3 class="check-title">Travel data</h3>
+                    <div class="check-field">
+                      <span class="check-label">Citizenchip</span>
+                      <span class="check-value cityzen"></span>
+                    </div>
+                    <div class="check-field">
+                      <span class="check-value visa_type"></span>
+                    </div>
+                    <div class="check-field">
+                      <span class="check-label">Type of visa</span>
+                      <span class="check-value visa_long"></span>
+                    </div>
+                    <div class="check-field check-field__flex">
+                      <div class="flex-left">
+                        <span class="check-label">Data of entry</span>
+                        <span class="check-value come_in"></span>
+                      </div>
+                      <div class="flex-right">
+                        <span class="check-label">Data of departure</span>
+                        <span class="check-value come_out"></span>
+                      </div>
+                    </div>
+                    <div class="check-field">
+                      <span class="check-value guest_count"></span>
+                    </div>
+                  </div>
+                  <a class="button-href change--button" id="1">Edit</a>
+                </div>
+                <div class="step-check step2">
+                  <div>
+                    <h3 class="check-title">Guest Details</h3>
+                    <div class="guest-info" id="guest1-info">
+                      <div class="check-field">
+                        <span class="check-label">Given name (as in passport, latin letters)</span>
+                        <span class="check-value guest-name"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Surname (as in passport, latin letters)</span>
+                        <span class="check-value guest-surname"></span>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+						  <span class="check-label">Sex</span>
+                          <span class="check-value guest-sex"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">Date of Birth</span>
+                          <span class="check-value guest-birth"></span>
+                        </div>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+                          <span class="check-label">Passport number</span>
+                          <span class="check-value guest-passport"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">The validity of the passport</span>
+                          <span class="check-value guest-pass-date"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="guest2-info">
+                      <div class="check-field">
+                        <span class="check-label">Given name (as in passport, latin letters)</span>
+                        <span class="check-value guest-name"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Surname (as in passport, latin letters)</span>
+                        <span class="check-value guest-surname"></span>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+						  <span class="check-label">Sex</span>
+                          <span class="check-value guest-sex"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">Date of Birth</span>
+                          <span class="check-value guest-birth"></span>
+                        </div>
+                      </div>
+                      <div class="check-field  check-field__flex">
+                        <div class="flex-left">
+                          <span class="check-label">Passport number</span>
+                          <span class="check-value guest-passport"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">The validity of the passport</span>
+                          <span class="check-value guest-pass-date"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="guest3-info">
+                      <div class="check-field">
+                        <span class="check-label">Given name (as in passport, latin letters)</span>
+                        <span class="check-value guest-name"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Surname (as in passport, latin letters)</span>
+                        <span class="check-value guest-surname"></span>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+						  <span class="check-label">Sex</span>
+                          <span class="check-value guest-sex"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">Date of Birth</span>
+                          <span class="check-value guest-birth"></span>
+                        </div>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+                          <span class="check-label">Passport number</span>
+                          <span class="check-value guest-passport"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">The validity of the passport</span>
+                          <span class="check-value guest-pass-date"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="guest4-info">
+                      <div class="check-field">
+                        <span class="check-label">Given name (as in passport, latin letters)</span>
+                        <span class="check-value guest-name"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Surname (as in passport, latin letters)</span>
+                        <span class="check-value guest-surname"></span>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+						  <span class="check-label">Sex</span>
+                          <span class="check-value guest-sex"></span>
+                        </div>
+                        <div class="flex-right">
+                          <span class="check-label">Date of Birth</span>
+                          <span class="check-value guest-birth"></span>
+                        </div>
+                      </div>
+                      <div class="check-field check-field__flex">
+                        <div class="flex-left">
+                          <span class="check-label">Passport number</span>
+                          <span class="check-value guest-passport"></span>
+                        </div>
+                        <div  class="flex-right">
+                          <span class="check-label">The validity of the passport</span>
+                          <span class="check-value guest-pass-date"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button-href change--button" id="2">Edit</a>
+                </div>
+                <div class="step-check step3 only-busines">
+                  <div>
+                    <h3 class="check-title">Personal data</h3>
+                    <div class="guest-info" id="personal1-info">
+                      <div class="check-field">
+                        <span class="check-label">Place of Birth</span>
+                        <span class="check-value birth-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Place of residence</span>
+                        <span class="check-value live-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in Russian)</span>
+                        <span class="check-value work"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in the native language)</span>
+                        <span class="check-value work-lng"></span>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="personal2-info">
+                      <div class="check-field">
+                        <span class="check-label">Place of Birth</span>
+                        <span class="check-value birth-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Place of residence</span>
+                        <span class="check-value live-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in Russian)</span>
+                        <span class="check-value work"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in the native language)</span>
+                        <span class="check-value work-lng"></span>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="personal3-info">
+                      <div class="check-field">
+                        <span class="check-label">Place of Birth</span>
+                        <span class="check-value birth-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Place of residence</span>
+                        <span class="check-value live-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in Russian)</span>
+                        <span class="check-value work"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in the native language)</span>
+                        <span class="check-value work-lng"></span>
+                      </div>
+                    </div>
+                    <div class="guest-info" id="personal4-info">
+                      <div class="check-field">
+                        <span class="check-label">Place of Birth</span>
+                        <span class="check-value birth-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Place of residence</span>
+                        <span class="check-value live-place"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in Russian)</span>
+                        <span class="check-value work"></span>
+                      </div>
+                      <div class="check-field">
+                        <span class="check-label">Position, place of work (in the native language)</span>
+                        <span class="check-value work-lng"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="button-href change--button" id="2">Edit</a>
+                </div>
+                <div class="step-check step4">
+                  <div>
+                    <h3 class="check-title">List of Cities</h3>
+                    <div class="check-field">
+                      <span class="check-label">List the cities that are going to visit </span>
+                      <span class="check-value city_tour"></span>
+                    </div>
+                  </div>
+                  <a class="button-href change--button" id="4">Edit</a>
+                </div>
+                <a class="button button-block button__big button__colored next" name="next">
+                  It's correct
+                </a>
+                <a class="button button-href previous--button" name="previous">Back</a>
+              </div>
+            </div>
+            <div class="support--fs">
+              <div class="support--fields">
+                <h2 class="support--fs-title">Contact details</h2>
+                <div class="callback--group">
+                  <label class="visually-hidden" for="support-name">Name</label>
+                  <input class="callback--text" type="text" id="support-name" name="support-name" placeholder="Имя" required/>
+                </div>
+
+                <div class="callback--group">
+                  <label class="visually-hidden" for="support-phone">Phone</label>
+                  <input class="callback--phone" type="phone" id="support-phone" name="support-phone" placeholder="Телефон" required/>
+                </div>
+
+                <div class="callback--group">
+                  <label class="visually-hidden" for="support-mail">E-mail</label>
+                  <input class="callback--mail" type="email" id="support-mail" name="support-mail" placeholder="E-mail" required/>
+                </div>
+
+                <div class="callback--group">
+                  <label class="visually-hidden" for="support-company">Name of organization or individual</label>
+                  <input class="callback--text" type="text" id="support-company" name="support-company" placeholder="Название организации или частное лицо"/>
+                </div>
+
+                <div class="callback--group">
+                  <p class="callback-legend">
+                     I'm also interested
+                  </p>
+                  <ul class="callback--checklist">
+                    <li class="callback--check">
+                      <input class="callback--checkbox" type="checkbox" id="support--guides" name="support--guides" value="Экскурсии и гиды">
+                      <label class="callback--check-label" for="support--guides">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><polyline  fill="none" points=" 20,6 9,17 4,12 " stroke="#000000" stroke-width="2"/></svg>
+                        Excursions and guides
+                      </label>
+                    </li>
+                    <li class="callback--check">
+                      <input class="callback--checkbox" type="checkbox" id="support--housing" name="support--housing" value="Бронирование жилья">
+                      <label class="callback--check-label" for="support--housing">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><polyline  fill="none" points=" 20,6 9,17 4,12 " stroke="#000000" stroke-width="2"/></svg>
+                        Reservation of accommodation
+                      </label>
+                    </li>
+                    <li class="callback--check">
+                      <input class="callback--checkbox" type="checkbox" id="support--transport" name="support--transport" value="Транспорт">
+                      <label class="callback--check-label" for="support--transport">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><polyline  fill="none" points=" 20,6 9,17 4,12 " stroke="#000000" stroke-width="2"/></svg>
+                        Transport
+                      </label>
+                    </li>
+                    <li class="callback--check">
+                      <input class="callback--checkbox" type="checkbox" id="support--events" name="support--events" value="Организация мероприятий">
+                      <label class="callback--check-label" for="support--events">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><polyline  fill="none" points=" 20,6 9,17 4,12 " stroke="#000000" stroke-width="2"/></svg>
+                        Organization of events
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="callback--group">
+                  <button class="button-href callback--button" id="callback-visa--button"> + Add a comment </button>
+                  <textarea class="callback--textarea visually-hidden" name="visa--comment" id="visa--comment" placeholder="Add a comment"></textarea>
+                </div>
+
+                <button class="button button__big button__colored  callback--submit" type="submit"> Send </button>
+
+                <p class="callback--confirm">
+                  By submitting an application, you agree with <a href="#">our policy of processing personal data</a>
+                </p>
+                <a class="button button-href previous--button" name="previous">Back</a>
+              </div>
+              <div class="support--hints">
+                <p>
+                  As soon as we receive your application, we will contact you to discuss the details of these contacts.
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <button class="modal-close visa--close" type="submit">Close</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="source/js/countryList.js"></script>
+    <script src="source/js/dates.js"></script>
+    <script src="source/js/scroll.js"></script>
+    <script src="source/js/float.js"></script>
+    <script src="source/js/typed.js"></script>
+	<script src="source/js/form-eng.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+
+    $(window).scroll(function() {
+      var top = $(document).scrollTop();
+      var bottom = $(window).scrollTop() + $(window).height();
+      console.log(top);
+      if (top > 110 && top < 600) {
+        $(".page-aside").css('justify-content', 'flex-end');
+        $('.visa-select').addClass('fixed');
+        $('.visa-select').css('margin-bottom', "150px");
+        $('.visa-select').css('width', "385px");
+      }
+      else {
+        if (top > 600) $(".page-aside").css('justify-content', 'flex-end');
+        else $(".page-aside").css('justify-content', 'space-between');
+        $('.visa-select').removeClass('fixed');
+      }
+     });
+
+     $("#eng-visa-tour").click(function() {
+       $(".page-header").removeClass("page-header__sticky");
+       $("body").css("overflow", "hidden");
+
+       $(".modal-visa").addClass("show-modal");
+     });
+
+     $("#eng-visa-bus").click(function() {
+       $(".page-header").removeClass("page-header__sticky");
+       $("body").css("overflow", "hidden");
+
+       $(".modal-visa").addClass("show-modal");
+     });
+    </script>
+  </body>
+</html>
