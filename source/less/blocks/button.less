@@ -1,0 +1,148 @@
+a.button {
+  display: block;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 280px;
+  height: 60px;
+  font-family:"CourierNew", arial;
+  font-size: 19px;
+  border-radius: 32px;
+  cursor: pointer;
+
+  &__bordered {
+    border: 6px solid @border-blue;
+  }
+
+  &__bordered:hover,
+  &__bordered:focus {
+    border-color: #3c6bb0;
+    color: #3c6bb0;
+  }
+
+  &__bordered:active {
+    border-color: #123569;
+    background-color: #123569;
+    color: #ffffff;
+  }
+
+  &__colored {
+    background: @blue;
+    color: #ffffff;
+    font-weight: normal;
+  }
+
+  &__colored:hover,
+  &__colored:focus {
+    background-color: @blue--hover;
+  }
+
+  &__colored:active {
+    background-color: #123569;
+  }
+
+  &__big {
+    width: 384px;
+    height: 65px;
+    border-radius: 40px;
+    font-size: 24px;
+    line-height: 60px;
+  }
+}
+
+.button-href {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  text-decoration: underline;
+  color: #000000;
+  font-family: "Courier New", arial;
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #3c6bb0;
+  }
+
+  &:active {
+    color: #123569;
+  }
+
+  &:visited {
+    color: #194b94;
+  }
+}
+
+.button-arrow{
+  width: 6px;
+  height: 6px;
+  border: 0;
+  background-color: none;
+  background-image: url("../img/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button-arrow__down {
+  background-image: url("../img/arrow-down.svg");
+}
+
+.button.remove-service {
+  position: relative;
+
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 20px;
+    height: 1px;
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.label-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    width: 15px;
+    height: 1px;
+    background-color: white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

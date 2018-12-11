@@ -1,0 +1,174 @@
+.callback--body {
+  padding-top: 190px;
+  padding-left:136px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.callback--header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+  font-family: "CourierNew", arial;
+  font-size: 38px;
+  line-height: 45px;
+}
+
+.callback--info {
+  max-width: 455px;
+  font-family: "Roboto", arial;
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.callback--form {
+  max-width: 384px;
+}
+
+.callback--group {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 6px;
+}
+
+.callback--text,
+.callback--phone,
+.callback--mail,
+.callback--textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid @inputs-border;
+  background-color: #ffffff;
+  font-family: "Roboto", arial;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.callback-legend {
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "Roboto", arial;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.callback--checklist {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  font-family: "Roboto", arial;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.callback--check {
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-family: "Roboto", arial;
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 30px;
+}
+
+.callback--check-label {
+  svg {
+    position: absolute;
+    left: 0;
+    top: -1px;
+
+    polyline {
+      stroke: #ffffff;
+    }
+  }
+}
+
+.callback--checkbox {
+  display: none;
+}
+
+.callback--checkbox + .callback--check-label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.callback--checkbox:checked + .callback--check-label svg {
+  polyline {
+    stroke: #000000;
+  }
+}
+
+.callback--button {
+  font-family: "CourierNew", arial;
+  font-size: 15px;
+  line-height: 28px;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+
+  &:hover,
+  &:focus {
+    border-color: #3c6bb0;
+  }
+
+  &:active {
+    border-color: #123569;
+  }
+
+  &:visited {
+    border-color: #194b94;
+  }
+}
+
+.callback--submit {
+  margin-top: 30px;
+  box-shadow: 0px 5px 13.5px 1.5px rgba(0, 0, 0, 0.12);
+}
+
+.callback--confirm {
+  margin: 0;
+  margin-top: 38px;
+  padding: 0;
+  max-width: 384px;
+  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 18px;
+
+  a {
+    color: #000000;
+  }
+}
+
+/* .form__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: none;
+  margin-top: 3px;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-bottom-color: red;
+  color: red;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+	display: block;
+}
+*/

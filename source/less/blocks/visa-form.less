@@ -1,0 +1,266 @@
+
+// форма заказа визы
+
+//это удалить
+.visa--information {
+  display: flex;
+}
+
+.visa--form {
+  display: none;
+  width: 904px;
+}
+
+.support--form {
+  position: relative;
+}
+
+// прогрессбар
+.progressbar {
+  max-width: 900px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 115px;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.progressbar li {
+  width: 19px;
+  height: 19px;
+  border: 6px solid @border-blue;
+  border-radius: 50%;
+	background-color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.progressbar li.active {
+	background-color: @border-blue;
+}
+
+/*progressbar connectors*/
+.progressbar li:after {
+  content: '';
+  width: 149px;
+  height: 5px;
+  background: @progress-bar;
+  position: absolute;
+  right: 25px;
+  top: 7px;
+}
+
+.progressbar li.small::after {
+  width: 119px;
+}
+
+.progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+
+.progressbar li.active:before,  #progressbar li.active:after{
+	background: @border-blue;
+	color: white;
+}
+
+// end progressbar
+
+.fields--flex {
+  display: flex;
+}
+
+.support--fs {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.support--fs.no-hint {
+  min-width: 904px;
+}
+
+.support--fs:not(:first-of-type) {
+	display: none;
+}
+
+.support--fields {
+  padding-left: 100px;
+  max-width: 384px;
+}
+
+.support--fs-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+  font-family: "CourierNew", arial;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.support--hints {
+  min-width: 384px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #676767;
+}
+
+.hint {
+  margin: 0;
+  margin-bottom: 43px;
+}
+
+
+/* скроем стандартную стрелку */
+.support--text::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+
+.support--text,
+.support--select,
+.support--data,
+.support--date,
+.support--number {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #cdd7e6;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-family: "Roboto", arial;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.support--group{
+  width: 47%;
+  margin-bottom: 0;
+
+  .label {
+    font-family: "Roboto", arial;
+    font-size: 11px;
+  }
+}
+
+.support--radio-group,
+.support--dates,
+.support--row {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.support--text.error,
+.support--data.error,
+.support--date.error,
+.support--number.error,
+.visa--cities.error {
+  border-bottom-color: red;
+}
+
+.previous--button {
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.previous--button {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-family: "CourierNew", bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+
+.previous--button:hover,
+.previous--button:focus {
+  color: #3c6bb0;
+  border-color: #3c6bb0;
+}
+
+.previous--button:active {
+  color: #123569;
+  border-color: #123569;
+}
+
+.visa--cities {
+  width: 100%;
+  margin-bottom: 80px;
+  border: none;
+  border-bottom: 1px solid #808080;
+}
+
+.support--file-hint {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 70px;
+}
+
+.file--label {
+  input {
+    display: none;
+  }
+
+  .label-text {
+    font-family: "CourierNew", bold;
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: #3c6bb0;
+    }
+
+    &:active {
+      color: #123569;
+    }
+  }
+}
+
+.visa--check-button {
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: auto;
+
+  span {
+    font-family: "Roboto", arial;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.filename {
+  width: 100%;
+  border: none;
+  padding-top: 10px;
+  font-family: "Roboto", arial;
+  font-size: 11px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.75);
+  background: white;
+}

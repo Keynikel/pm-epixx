@@ -1,0 +1,25 @@
+.spetial {
+  background-color: @spetial-back;
+  padding: 93px 50px 43px 240px;
+}
+
+.spetial--header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 28px;
+  font-family: "CourierNew", arial;
+  font-size: 24px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -103px;
+    top: -23px;
+    width: 35px;
+    height: 35px;
+    border: 6px solid @border-blue;
+    border-radius: 50%;
+  }
+}

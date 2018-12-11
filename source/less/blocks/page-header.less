@@ -1,0 +1,83 @@
+.page-header {
+  box-sizing: border-box;
+  width: 1280px;
+  padding: 38px 32px 50px 136px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  &__sticky {
+    position: fixed;
+    top: 0;
+    width: 1280px;
+    z-index: 3;
+  }
+}
+
+.page-header--logo {
+  margin: 0;
+  padding: 0;
+  font-family: "CourierNew", arial;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.page-header--langs {
+  display: flex;
+  flex-direction: column;
+  margin-right: -7px;
+  margin-top: 8px;
+
+  .lang {
+    text-decoration: underline;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+
+    &__active {
+      font-family: "CourierNew", arial;
+      font-size: 19px;
+      line-height: 24px;
+      color: #000000;
+      padding-bottom: 7px;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #3c6bb0;
+      }
+    }
+  }
+}
+
+.page-header--left-part,
+.page-header--right-part {
+  display: flex;
+}
+
+.page-header--left-part {
+  width: 280px;
+  justify-content: space-between;
+}
+
+.page-header--right-part {
+  width: 488px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.page-header--contacts p{
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", arial;
+  font-size: 17px;
+  line-height: 28px;
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}

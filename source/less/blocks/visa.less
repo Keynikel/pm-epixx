@@ -1,0 +1,156 @@
+.modal-visa {
+  width: 1280px;
+  height: 100%;
+  background-color: #ffffff;
+  overflow: auto;
+  z-index: 10;
+}
+
+.visa--body {
+  padding: 135px 106px;
+}
+
+// модаль оформления визы - блок с информацией
+.visa--information {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.visa-block {
+  max-width: 555px;
+}
+
+.visa--type-block {
+  max-width: 395px;
+}
+
+.visa-block--header {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  font-family: "CourierNew", arial;
+  font-size: 38px;
+  line-height: 38px;
+}
+
+.visa-block--info {
+  padding-bottom: 50px;
+}
+
+.visa-block--info p,
+.visa-block--info div,
+.visa-block--info ol{
+  font-family: "Roboto", arial;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 33px;
+}
+
+.visa-block--info ol {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+//частые воспросы
+
+.visa--questions-title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  font-family: "CourierNew", arial;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.question--wrapper {
+  max-width: 552px;
+  padding: 18px 32px 20px 32px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 13.8px 1.2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.visa--question {
+  position: relative;
+  font-family: "CourierNew", arial;
+  font-size: 19px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.visa--answer {
+  display: none;
+  padding-top: 20px;
+  font-family: "Roboto", arial;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.question--button {
+  position: absolute;
+  right: -26px;
+  top: 50%;
+}
+
+.ask-question--button,
+.see-answers--button {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  margin-top: 45px;
+  margin-left: 28px;
+  font-family: "CourierNew", bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #808080;
+}
+
+.ask-question--button:hover,
+.ask-question--button:focus {
+  color: #3c6bb0;
+  border-color: #3c6bb0;
+}
+
+.ask-question--button:active {
+  color: #123569;
+  border-color: #123569;
+}
+
+.question--ask {
+  display: none;
+}
+
+.tourist-visa {
+  margin-bottom: 26px;
+}
+
+
+//кнопки справа
+
+.visa--type-header {
+  font-family: "CourierNew", bold;
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.another--guest {
+  display: none;
+  margin-top: 60px;
+  border-top: 1px solid #cdd7e6;
+  padding-top: 30px;
+}
+
+.visa--type-block.fixed {
+  position: fixed;
+  top: 0;
+  left: 950px;
+  width: 380px;
+}

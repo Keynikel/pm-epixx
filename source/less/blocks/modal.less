@@ -1,0 +1,45 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 1280px;
+  height: 100%;
+  background-color: #ffffff;
+  top: 0;
+  left: 50%;
+  margin-left: -640px;
+  overflow: auto;
+}
+
+.show-modal {
+  display: block;
+}
+
+.modal-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 37px;
+  height: 33px;
+  font-size: 0px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::after, .modal-close::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 3px;
+  width: 30px;
+  height: 1px;
+  background-color: #231f20;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
